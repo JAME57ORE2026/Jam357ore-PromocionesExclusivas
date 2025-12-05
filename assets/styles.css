@@ -472,7 +472,7 @@ img#banner{
     border-radius: 12px;
     display: flex; /* shown by JS */
   flex-direction: column;
-    z-index: 100000;
+    z-index: 1;
    
 }
 
