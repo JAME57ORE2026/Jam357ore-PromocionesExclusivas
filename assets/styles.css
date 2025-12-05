@@ -332,18 +332,21 @@ section {
    NAVBAR
 ============================ */
 .header {
-    width: 95%;
+    width: 100%;
     padding: 15px 20px;
     background: #0f0f0f;
     border-bottom: 1px solid #222;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 90;
 }
-
+.header div.logo img{
+  width: 100px !important;
+  height: auto;
+}
 .header nav a {
     margin: 0 12px;
     color: #eee;
