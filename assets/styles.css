@@ -344,7 +344,7 @@ section {
     z-index: 90;
 }
 .header div.logo img{
-  width: 100px !important;
+  width: 57px !important;
   height: auto;
 }
 .header nav a {
@@ -441,7 +441,14 @@ img#banner{
     border-top: 2px solid #222;
     border-bottom: 2px solid #222;
 }
-
+.price{
+  font-size: 20px;
+}
+.red{
+  font-size: 16px;
+  color: rgb(207, 56, 56);
+  text-decoration: line-through;
+}
 .promo-btn {
     margin-top: 25px;
 }
