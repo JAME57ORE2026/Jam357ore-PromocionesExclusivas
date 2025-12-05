@@ -5,6 +5,7 @@ body {
   background-color: #0a0a0a;
   color: #e0e0e0;
   overflow-x: hidden;
+  width: 105vw;
 }
 
 /* hero */
@@ -26,7 +27,7 @@ body {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 250px;
   animation: logoGlow 2.5s ease-in-out infinite alternate;
   filter: drop-shadow(0 0 15px #00ff88);
 }
@@ -472,7 +473,7 @@ img#banner{
     display: flex; /* shown by JS */
   flex-direction: column;
     z-index: 100000;
-    animation: ease-in-out 10s float infinite;
+   
 }
 
 .raffle-images {
@@ -593,7 +594,7 @@ img#banner{
    RESPONSIVE FIXES
 ============================ */
 @media (max-width: 600px) {
-    .title {
+    /* .title {
         font-size: 32px;
     }
     .tagline {
@@ -601,7 +602,7 @@ img#banner{
     }
     .hero {
         height: 70vh;
-    }
+    } */
 }
 
 
