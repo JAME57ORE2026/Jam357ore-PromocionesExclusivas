@@ -709,10 +709,11 @@ img#banner{
     flex-direction: column;
     padding: 12px;
     gap: 10px;
+  
   }
 
   .header nav a {
-    font-size: 16px;
+    font-size: 10px;
     margin: 0 6px;
   }
 
