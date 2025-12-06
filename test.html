@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JAM357ORE - Urban Streetwear Colombia</title>
+
+  <!-- keep your original font choices -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- your stylesheet (you said you'll provide / tweak it) -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body class="dark">
+  <!-- ---------- HERO (top banner) ---------- -->
+  <header class="hero">
+    <div class="smoke-wrap">
+      <div class="cloud cloud-1"><img src="./assets/imgs/clouds.png" alt=""></div>
+      <div class="cloud cloud-2"><img src="./assets/imgs/clouds.png" alt=""></div>
+      <div class="cloud cloud-3"><img src="./assets/imgs/clouds.png" alt=""></div>
+
+      <div class="overlay">
+        <h1 id="hero-title" class="title">JAM357ORE</h1>
+        <img src="./assets/imgs/jam357ore.jpg" alt="JAM357ORE-Banner" id="banner" />
+        <p class="tagline">Weed Culture 🔥 • Rock Culture 🎧 • Hip Hop Culture</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============== AGE GATE =============== -->
+    <div class="overlay" id="age-overlay" aria-hidden="false">
+      <div class="age-card">
+        <img src="./assets/imgs/logo1.png" alt="logo" class="logo">
+        <h2>🔥 Must be 18+ to Enter 🔥</h2>
+        <p>Este sitio contiene accesorios legales para fumar. <br> Confirm Your Age.</p>
+
+        <div class="age-btns">
+          <button id="age-confirm" class="btn primary">Tengo 18+</button>
+          <button id="age-deny" class="btn ghost">No tengo 18</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============== HEADER / NAVBAR =============== -->
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/imgs/logo3.png" alt="Jame57ore Logo">
+      </div>
+
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#promo">Promos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#nequi">Nequi QR</a>
+         <a href="#KingZone">King Zone</a>
+        <!-- Language toggle (uncomment if you want to show it) -->
+        <button class="btn btn-toggle" id="lang-btn" type="button">ES / EN</button>
+
+        <!-- Theme toggle -->
+        <button class="btn btn-toggle" id="theme-btn" type="button">☀️ / 🌙</button>
+      </nav>
+    </header>
+
+    <!-- =============== HERO (section) =============== -->
+    <section id="hero-section" class="hero">
+      <div class="smoke-wrap">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+
+      <div class="overlay">
+        <img src="./assets/imgs/logo2.png" class="logo" alt="Jame57ore Logo">
+        <h1 class="title">Bienvenido a <span class="gold">Jame57ore</span></h1>
+        <p class="tagline">Tu tienda urbana en Zipaquirá — importamos artículos únicos y accesorios premium.</p>
+        <button class="btn hero-btn" type="button">Ver Productos</button>
+      </div>
+    </section>
+
+    <!-- =============== PROMO =============== -->
+    <section id="promo" class="promo">
+      <h2 class="gold">Promociones</h2>
+
+      <p>🚚 <b class="gold">Entrega GRATIS</b> en Zipaquirá para cualquier producto en inventario.</p>
+      <p>🎟️ Cupón especial: <b class="gold">PETROPRESIDENTE2026</b> — 5% OFF (solo si lo mencionas bro)</p>
+      <p>Únete a la lista VIP para eventos, drops y productos exclusivos.</p>
+
+      <button class="btn promo-btn">Unirme a la Lista VIP</button>
+    </section>
+
+    <!-- =============== RAFFLE POPUPS =============== -->
+    <div class="raffleContainer" aria-live="polite">
+      <div class="raffle-popup" role="dialog" aria-label="Rifa 1">
+        <h2 class="gold">🎁 Rifa #1</h2>
+        <p>Por compras mayores a <b class="gold">$15.000</b> en cualquier evento, recibes un ticket GRATIS.</p>
+        <div class="raffle-images">
+          <img src="./assets/imgs/catalog/grinder-manual.png" width="120" alt="Grinder">
+        </div>
+        <button class="btn close-raffle" type="button">Cerrar</button>
+      </div>
+
+      <div class="raffle-popup" role="dialog" aria-label="Rifa 2">
+        <h2 class="gold">🎁 Rifa #2</h2>
+        <p>Por compras mayores a <b class="gold">$35.000</b> en cualquier evento, recibes un ticket GRATIS.</p>
+        <div class="raffle-images">
+          <img src="./assets/imgs/catalog/mens-gift.png" width="120" alt="Gift">
+        </div>
+        <button class="btn close-raffle" type="button">Cerrar</button>
+      </div>
+
+      <div class="raffle-popup" role="dialog" aria-label="Rifa 3">
+        <h2 class="gold">🎁 Rifa #3</h2>
+        <p>Por compras mayores a <b class="gold">$60.000</b> en cualquier evento, recibes un ticket GRATIS.</p>
+        <div class="raffle-images">
+          <img src="./assets/imgs/catalog/hooka.png" width="120" alt="Hooka">
+        </div>
+        <button class="btn close-raffle" type="button">Cerrar</button>
+      </div>
+    </div>
+
+    <!-- =============== PRODUCTOS =============== -->
+    <section id="productos" class="productos">
+      <h2 class="gold">Productos</h2>
+
+      <div class="grid">
+        <!-- Product card example 1 -->
+        <div class="product-card">
+          <div class="product-img" data-alt="./assets/imgs/catalog/smoke-tray-small-hover.png">
+            <img src="./assets/imgs/catalog/smoke-tray-small.png" alt="King Rolling Tray">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>King Rolling Tray</h3>
+          <p>Tray de lujo — compacto y duradero. Ideal para armar con estilo.</p>
+          <p class="price gold">$75.000 <br>
+            <small class="price red">$95.000</small>
+          </p>
+
+          <button class="btn product-btn">Comprar</button>
+        </div>
+
+        <!-- Product card example 2 -->
+        <div class="product-card">
+          <div class="product-img" data-alt="./assets/imgs/catalog/grinder-hover.png">
+            <img src="./assets/imgs/catalog/grinder.png" alt="Electriuc Grinder">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>Electric Grinder</h3>
+          <p>Molido fino y rápido — batería y diseño compacto.</p>
+          <p class="price gold">$45.000 <br>
+            <small class="price red">$85.000</small>
+          </p>
+          <button class="btn product-btn">Comprar</button>
+        </div>
+
+        <!-- Product card example 3 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="./assets/imgs/catalog/hemp-blunt-wraps.png" alt="Flavor Hemp Blunts">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>Flavor Hemp Blunts</h3>
+          <p>Compacta y sabrosa — perfecta para el parche.</p>
+          <p class="price gold">$8.000 <br>
+            <small class="price red">$15.000</small>
+          </p>
+          <button class="btn product-btn">Comprar</button>
+        </div>
+
+        <!-- Product card example 4 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="./assets/imgs/catalog/hooka.png" alt="Mini Hooka">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>Mini Hooka</h3>
+          <p>Para usos múltiples: carbón, tabaco y hierbas.</p>
+          <p class="price gold">$45.000 <br>
+            <small class="price red">$65.000</small>
+          </p>
+          <button class="btn product-btn">Comprar</button>
+        </div>
+
+        <!-- Product card example 5 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="./assets/imgs/catalog/cone-holders.png" alt="King Cone Holder">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>King Cone Holder</h3>
+          <p>Estuche impermeable e indestructible para tus cones.</p>
+          <p class="price gold">$3.500 <br>
+            <small class="price red">$6.000</small>
+          </p>
+          <button class="btn product-btn">Comprar</button>
+        </div>
+
+        <!-- Product card example 6 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="./assets/imgs/catalog/trillador2.png" alt="Trillador">
+            <span class="watermark">Jame57ore</span>
+          </div>
+
+          <h3>Trillador Pro</h3>
+          <p>Pa’ la vuelta fina: trae compartimento para material molido y otro para nuggets.</p>
+          <p class="price gold">$15.000 <br>
+            <small class="price red">$17.000</small>
+          </p>
+          <button class="btn product-btn">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== EVENTOS =============== -->
+    <section id="eventos" class="eventos">
+      <h2 class="gold">Eventos en Zipaquirá</h2>
+      <p class="event-description">Estos son los eventos donde Jame57ore participa, entrega gratis, hace rifas y lanza
+        productos nuevos.</p>
+
+      <ul class="event-list">
+        <li><b class="gold">CicloRuta Zipaquirá – Domingo</b><br>9:00 AM — 2:00 PM</li>
+        <li><b class="gold">Parque Principal – Sábado</b><br>4:00 PM — 9:00 PM</li>
+        <li><b class="gold">Plazoleta de la Catedral de Sal – Viernes</b><br>5:00 PM — 8:30 PM</li>
+      </ul>
+    </section>
+
+    <!-- =============== VIP SIGNUP =============== -->
+    <section id="vip" class="vip">
+      <h2 id="vip-title" class="gold">Lista VIP</h2>
+
+      <p>Regístrate para recibir ofertas secretas, drops exclusivos, rifas y entregas gratis durante eventos.</p>
+
+      <input type="email" id="vip-email" placeholder="Tu email" aria-label="Tu email">
+      <button class="btn" id="vip-submit" type="button">Unirme</button>
+
+      <p id="vip-status" class="vip-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- =============== CONTACTO =============== -->
+    <section id="contacto" class="contacto">
+      <h2 class="gold">Contacto</h2>
+
+      <p>¿Quieres comprar algo o tienes preguntas bro?</p>
+
+      <div class="contact-info">
+        <p><b class="gold">WhatsApp:</b> <a href="https://wa.me/573238119340" target="_blank" rel="noopener">323 811 9340</a></p>
+        <p><b class="gold">Email:</b> JACF2025@gmail.com</p>
+        <p><b class="gold">Instagram / TikTok:</b> Próximamente</p>
+      </div>
+
+      <h3 class="gold">Pago por Nequi</h3>
+      <p>Escanea el código para pagar rápido:</p>
+
+      <img id="nequi" src="./assets/imgs/QR-code.png" width="150" class="qr" alt="QR Nequi">
+    </section>
+
+<article class="zipakings-panel" id="KingZone">
+    <header class="zk-header">
+        <h2 class="zk-title">👑 ZipaKings – Movimiento Real</h2>
+        <p class="zk-subtitle">Una organización creada con el manifiesto de los Reyes </p>
+          <header style="
+    position:relative;
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg, #000, #111, #000);
+    border-bottom:2px solid rgba(212,175,55,0.5);
+  ">
+
+    <h1 style="
+      font-size:3.8rem;
+      color:#D4AF37;
+      margin-bottom:15px;
+      text-shadow:0 0 18px #D4AF37;
+      letter-spacing:4px;
+      font-weight:900;
+    ">
+      ZipaKings
+    </h1>
+
+    <p style="
+      max-width:750px;
+      font-size:1.1rem;
+      color:white;
+      opacity:0.9;
+      margin-bottom:30px;
+      line-height:1.5;
+      padding:0 20px;
+    ">
+      Una organización nacida del <strong style="color:#D4AF37;">Manifiesto de los Reyes</strong>:  
+      elevar a nuestra comunidad con creatividad, disciplina, estilo, comercio justo y visión de futuro.  
+      Somos cultura, somos calle, somos clase. Somos ZipaKings. 👑
+    </p>
+
+    <!-- NAVIGATION -->
+    <nav style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:10px;">
+      <a href="#raffles" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎟️ Raffles</a>
+      <a href="#webdev" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">💻 Web Services</a>
+      <a href="#clothes" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">👕 Custom Clothes</a>
+      <a href="#smoke" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🔥 Smoke & Speak</a>
+      <a href="#charity" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎄 Caridad</a>
+    </nav>
+
+ 
+    </header>
+
+    <section id="raffles" class="zk-section">
+        <h3 class="zk-section-title">🎟️ Raffles Reales</h3>
+        <p class="zk-text">
+            Participa enviando un mensaje por WhatsApp al 
+            <strong>323 811 9340</strong> diciendo que deseas entrar al sorteo.
+            Adjunta el pantallazo de tu compra Nequi.  
+            <span class="zk-highlight">Cada compra cuenta: entre más alto el monto, más grande el premio.</span>
+        </p>
+        <a href="https://wa.me/573238119340?text=Quiero%20participar%20en%20el%20raffle%20ZipaKings" 
+           class="zk-btn">Participar por WhatsApp</a>
+    </section>
+
+    <section id="web" class="zk-section">
+        <h3 class="zk-section-title">💻 Servicios Web Premium</h3>
+        <p class="zk-text">
+            Landing pages y sitios profesionales al estilo ZipaKings.  
+            <strong>Precio especial: 400.000 COP</strong>  
+            <strong>Mantenimiento: 25.000 COP/mes</strong> (incluye hosting real).
+        </p>
+        <a href="https://wa.me/573238119340?text=Estoy%20interesado%20en%20servicios%20web%20ZipaKings" 
+           class="zk-btn">Solicitar Proyecto</a>
+    </section>
+
+    <section id="custom-clothes" class="zk-section">
+        <h3 class="zk-section-title">🏈 Jerseys Personalizados</h3>
+        <p class="zk-text">
+            Jerseys premium para fútbol, baloncesto y béisbol.  
+            Elige color, número, nombre y estilo.  
+            <strong>100% pre-order ZipaKings Edition.</strong>
+        </p>
+        <a href="https://wa.me/573238119340?text=Quiero%20un%20jersey%20personalizado%20ZipaKings" 
+           class="zk-btn">Hacer Pedido</a>
+    </section>
+
+    <section id="smoke" class="zk-section">
+        <h3 class="zk-section-title">💨 Smoke & Speak Sessions</h3>
+        <p class="zk-text">
+            Para stoners, rockers y hip hop heads que quieren **mejorar su inglés**.  
+            Actividades, charlas y breaks para fumar sin estrés.  
+            Costo pequeño – energía grande.
+        </p>
+        <a href="https://wa.me/573238119340?text=Quiero%20entrar%20a%20Smoke%20y%20Speak%20ZipaKings" 
+           class="zk-btn">Unirme</a>
+    </section>
+
+    <section id="charity" class="zk-section">
+        <h3 class="zk-section-title">🎄 Evento de Caridad – Zipaquirá</h3>
+        <p class="zk-text">
+            ZipaKings está reuniendo juguetes para niños de los barrios más vulnerables.  
+            Tu aporte hace una diferencia real en esta Navidad.
+        </p>
+        <a href="https://wa.me/573238119340?text=Quiero%20donar%20para%20el%20evento%20de%20Navidad%20ZipaKings" 
+           class="zk-btn">Donar Juguetes</a>
+    </section>
+</article>
+
+
+
+
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+      <p>© 2025 Jame57ore — Importados desde China, diseñados con corazón colombiano 🇨🇴</p>
+      <p class="mini">Sitio web creado con estilo y calle bro.</p>
+    </footer>
+  </main>
+
+  <!-- keep autoplay beat if desired -->
+  <audio id="JAM357ORE-beat" autoplay loop>
+    <source src="./assets/music/gparadise.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- =================== SCRIPTS =================== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      /* ==================================================
+           SAFE QUERY HELPERS
+      ================================================== */
+      const $ = (sel) => document.querySelector(sel);
+      const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+      /* ==================================================
+           AGE GATE
+      ================================================== */
+      const ageOverlay = $("#age-overlay");
+      const btnConfirm = $("#age-confirm");
+      const btnDeny = $("#age-deny");
+
+      if (ageOverlay && btnConfirm && btnDeny) {
+        btnConfirm.addEventListener("click", () => {
+          ageOverlay.style.display = "none";
+          ageOverlay.setAttribute("aria-hidden", "true");
+          console.log("Age confirmed (18+)");
+        });
+
+        btnDeny.addEventListener("click", () => {
+          console.log("User denied age check");
+          // redirect away
+          window.location.href = "https://google.com";
+        });
+      }
+
+      /* ==================================================
+           LANGUAGE TOGGLE (EN / ES)
+      ================================================== */
+      const langBtn = $("#lang-btn");
+
+      const translations = {
+        es: { heroTitle: "Accesorios Premium y Callejeros", heroBtn: "Ver productos", vipTitle: "Únete a la Lista VIP" },
+        en: { heroTitle: "Premium & Street Accessories", heroBtn: "See products", vipTitle: "Join the VIP List" }
+      };
+
+      let currentLang = "es";
+
+      function applyLanguage(lang) {
+        const dict = translations[lang];
+        if (!dict) return;
+
+        // update elements if present
+        const heroTitle = $("#hero-title");
+        if (heroTitle) heroTitle.textContent = dict.heroTitle;
+
+        const heroBtn = $(".hero-btn");
+        if (heroBtn) heroBtn.textContent = dict.heroBtn;
+
+        const vipTitle = $("#vip-title");
+        if (vipTitle) vipTitle.textContent = dict.vipTitle;
+      }
+
+      if (langBtn) {
+        langBtn.addEventListener("click", () => {
+          currentLang = currentLang === "es" ? "en" : "es";
+          applyLanguage(currentLang);
+          console.log("Language switched to:", currentLang.toUpperCase());
+        });
+      }
+
+      /* ==================================================
+           THEME TOGGLE (LIGHT / DARK)
+      ================================================== */
+      const themeBtn = $("#theme-btn");
+
+      function applyTheme(mode) {
+        if (mode === "dark") {
+          document.body.classList.add("dark");
+          if (themeBtn) themeBtn.textContent = "☀️";
+        } else {
+          document.body.classList.remove("dark");
+          if (themeBtn) themeBtn.textContent = "🌙";
+        }
+      }
+
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      applyTheme(savedTheme);
+
+      if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+          const newTheme = document.body.classList.contains("dark") ? "light" : "dark";
+          applyTheme(newTheme);
+          localStorage.setItem("theme", newTheme);
+          console.log("Theme toggled:", newTheme);
+        });
+      }
+
+      /* ==================================================
+           PRODUCT IMAGE HOVER SWAP
+           - Works only if product-img has data-alt attribute
+      ================================================== */
+      const productImgs = $$(".product-img img");
+      productImgs.forEach(img => {
+        const wrapper = img.closest(".product-img");
+        if (!wrapper) return;
+
+        const altSrc = wrapper.getAttribute("data-alt");
+        if (!altSrc) return; // do nothing if no alt provided
+
+        const originalSrc = img.src;
+
+        // preload alt image
+        const pre = new Image();
+        pre.src = altSrc;
+
+        wrapper.addEventListener("mouseenter", () => {
+          img.src = altSrc;
+        });
+
+        wrapper.addEventListener("mouseleave", () => {
+          img.src = originalSrc;
+        });
+
+        wrapper.addEventListener("touchstart", (e) => {
+          e.preventDefault();
+          img.src = img.src.includes(altSrc) ? originalSrc : altSrc;
+        }, { passive: false });
+      });
+
+      /* ==================================================
+           RAFFLE POPUP — supports multiple popups
+      ================================================== */
+      const rafflePopups = $$(".raffle-popup");
+      rafflePopups.forEach(popup => {
+        const closeBtn = popup.querySelector(".close-raffle");
+        if (closeBtn) {
+          closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+            console.log("Raffle closed:", popup.getAttribute("aria-label") || "");
+          });
+        }
+      });
+
+      /* ==================================================
+           VIP SIGNUP
+      ================================================== */
+      const vipEmail = $("#vip-email");
+      const vipSubmit = $("#vip-submit");
+      const vipStatus = $("#vip-status");
+
+      if (vipSubmit && vipEmail && vipStatus) {
+        vipSubmit.addEventListener("click", () => {
+          const email = vipEmail.value.trim();
+
+          if (!email || !email.includes("@")) {
+            vipStatus.textContent = "Ingresa un email válido bro.";
+            vipStatus.style.color = "red";
+            return;
+          }
+
+          vipStatus.textContent = "🔥 Te uniste a la lista VIP bro 🔥";
+          vipStatus.style.color = "gold";
+
+          console.log("VIP email submitted:", email);
+
+          vipEmail.value = "";
+        });
+      }
+
+      /* ==================================================
+           HERO BUTTON → SCROLL TO PRODUCTOS
+      ================================================== */
+      const heroBtnScroll = $(".hero-btn");
+      if (heroBtnScroll) {
+        heroBtnScroll.addEventListener("click", () => {
+          $("#productos")?.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+
+    });
+  </script>
+
+
+</html>
