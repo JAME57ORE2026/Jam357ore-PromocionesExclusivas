@@ -530,7 +530,7 @@ img#banner{
     font-weight: 600;
     color: #000;
 }
-h3.gold{
+.gold,h3.gold{
   color: #ffcc33;
   font-size: 35px;
   margin: 0;

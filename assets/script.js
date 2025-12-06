@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `🏆 *${name}*\n\n` +
       `📄 *Descripción:*\n${desc}\n\n` +
       `💰 *Precio:* ${price}\n\n` +
-      `\n🚚 *En compras de $20 USD o más dentro de Zipaquirá, la entrega es GRATIS.*` +
+      `\n🚚 *En compras de $20 Lukas o Más dentro de Zipaquirá, la entrega es GRATIS!*` +
       `\n\n📍 Envíame tu ubicación para coordinar entrega 🙌`;
 
     const encoded = encodeURIComponent(msg);
