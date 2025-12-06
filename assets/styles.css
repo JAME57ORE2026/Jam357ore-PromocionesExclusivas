@@ -378,10 +378,11 @@ section {
 }
 div.raffle-flex{
  display: flex;
+ flex-direction: row;
  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
   }
 /* ============================
    HERO SECTION
@@ -545,6 +546,9 @@ img#banner {
 ============================ */
 .productos .grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .product-card {
@@ -553,6 +557,8 @@ img#banner {
   border-radius: 12px;
   border: 1px solid #222;
   transition: 0.3s;
+  width: 200px;
+  height: auto;
 }
 
 .product-card:hover {
@@ -688,8 +694,10 @@ h3.gold {
 
 /* Header */
 .zipakings-panel .zk-header {
-  text-align: center;
-  margin-bottom: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 
 }
 
@@ -894,8 +902,9 @@ h3.gold {
   }
 
   .product-card {
-    padding: 15px;
-    width: 50%;
+    padding: 0;
+    width: 150px;
+    margin: 0;
   }
 
   .product-img {
