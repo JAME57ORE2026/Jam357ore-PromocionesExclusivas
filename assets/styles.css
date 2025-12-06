@@ -690,3 +690,207 @@ img#banner{
   opacity: 0.85;
   transform: scale(1.05);
 }
+/* ============================
+   📱 MOBILE RESPONSIVE OVERRIDES
+   ============================ */
+@media (max-width: 600px) {
+
+  /* ----- Body ----- */
+  body {
+    overflow-x: hidden;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+  }
+
+  /* ----- Navbar ----- */
+  .header {
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .header nav a {
+    font-size: 16px;
+    margin: 0 6px;
+  }
+
+  .header div.logo img.banner {
+    height: 40px;
+  }
+
+  /* ----- HERO ----- */
+  .hero {
+    height: 80vh;
+    padding: 0 20px;
+  }
+
+  .hero .logo {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 38px !important;
+  }
+
+  .tagline {
+    font-size: 16px !important;
+    margin-top: 6px;
+  }
+
+  .hero-btn .btn {
+    width: 90%;
+    margin-top: 12px;
+  }
+
+  /* Smoke clouds smaller */
+  .cloud {
+    width: 150px;
+    opacity: 0.15;
+  }
+
+  /* ----- PROMO SECTION ----- */
+  .promo {
+    padding: 40px 20px;
+  }
+
+  .promo h2 {
+    font-size: 2rem;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .model-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .promo-info {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
+  .promo-btn .btn {
+    width: 100%;
+  }
+
+  /* ----- RAFFLE POPUP ----- */
+  .raffleContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .raffle-popup {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .raffle-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ----- PRODUCT GRID ----- */
+  .productos .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 18px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-img {
+    height: 170px;
+  }
+
+  /* ----- EVENTS ----- */
+  .eventos li {
+    font-size: 18px;
+  }
+
+  /* ----- VIP SIGNUP ----- */
+  #vip-email {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .vip-status {
+    font-size: 16px;
+  }
+
+  /* ----- CONTACTO ----- */
+  .qr {
+    width: 80%;
+  }
+
+  /* ----- FOOTER ----- */
+  .footer-logo {
+    width: 80%;
+    margin: 0 auto 15px auto;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  /* ----- AGE GATE ----- */
+  .age-card {
+    width: 92%;
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .age-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .age-card p {
+    font-size: 1rem;
+  }
+
+  .age-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .age-btns .btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  /* ----- ZipaKings Premium Panel ----- */
+  .zipakings-panel {
+    padding: 30px 18px;
+  }
+
+  .zipakings-panel .zk-title {
+    font-size: 1.6rem;
+  }
+
+  .zipakings-panel .zk-section {
+    padding: 18px;
+  }
+
+  .zipakings-panel .zk-section-title {
+    font-size: 1.2rem;
+  }
+
+  .zipakings-panel .zk-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .zipakings-panel .zk-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
