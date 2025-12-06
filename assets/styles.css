@@ -37,10 +37,10 @@ body {
     filter: drop-shadow(0 0 10px #00ff88) brightness(1);
   }
   50% {
-    filter: drop-shadow(0 0 20px #00ff88) brightness(1.2);
+    filter: drop-shadow(0 0 20px #07aa5e) brightness(1.2);
   }
   100% {
-    filter: drop-shadow(0 0 35px #1aff00) brightness(1.4);
+    filter: drop-shadow(0 0 35px #ffee00) brightness(1.4);
   }
 
 }
@@ -459,8 +459,14 @@ img#banner{
 ============================ */
 .raffleContainer{
   display: flex;
+  margin-top: 50px;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+}
+.raffleContainer p{
+  
+  font-size: 20px;
 }
 .raffle-popup {
     background: #0f0f0f;
@@ -472,6 +478,8 @@ img#banner{
     border-radius: 12px;
     display: flex; /* shown by JS */
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
     z-index: 1;
    
 }

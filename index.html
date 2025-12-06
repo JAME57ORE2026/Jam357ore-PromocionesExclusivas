@@ -8,7 +8,8 @@
 
   <!-- keep your original font choices -->
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
 
   <!-- your stylesheet (you said you'll provide / tweak it) -->
   <link rel="stylesheet" href="./assets/styles.css" />
@@ -57,7 +58,7 @@
         <a href="#promo">Promos</a>
         <a href="#contacto">Contacto</a>
         <a href="#nequi">Nequi QR</a>
-         <a href="#KingZone">King Zone</a>
+        <a href="#KingZone">King Zone</a>
       </nav>
     </header>
 
@@ -78,42 +79,46 @@
     </section>
 
     <!-- =============== PROMO =============== -->
-   <!-- =============== PROMO =============== -->
-<section id="promo" class="promo">
-  <h2 class="gold">Promociones</h2>
+    <!-- =============== PROMO =============== -->
+    <section id="promo" class="promo">
+      <h2 class="gold">Promociones</h2>
 
-  <p>🚚 <b class="gold">Entrega GRATIS</b> en Zipaquirá para cualquier compra superando <b class="gold">20k</b>.</p>
-  <p>🎟️ Cupón especial: <b class="gold">GLOCKZILLA5700</b> — 5% OFF (solo si lo mencionas bro)</p>
-  <p>Únete a la lista VIP para eventos, drops y productos exclusivos.</p>
+      <p>🚚 <b class="gold">Entrega GRATIS</b> en Zipaquirá para cualquier compra superando <b class="gold">20k</b>.</p>
+      <p>🎟️ Cupón especial: <b class="gold">GLOCKZILLA5700</b> — 5% OFF (solo si lo mencionas bro)</p>
+      <p>Únete a la lista VIP para eventos, drops y productos exclusivos.</p>
+      <a href="#vip">
+        <button id="raffle-btn" class="btn promo-btn">Unirme a la Lista VIP</button>
+      </a>
 
-  <button id="raffle-btn" class="btn promo-btn">Unirme a la Lista VIP</button>
-</section>
+    </section>
 
-<!-- =============== RAFFLE POPUPS =============== -->
-<div class="raffleContainer" id="raffle-modal" style="display:none;">
-  <div class="raffle-popup">
-    <h2 class="gold">🎁 Rifa #1</h2>
-    <p>Compras mayores a <b class="gold">$15.000</b> reciben un ticket GRATIS.</p>
-    <img src="./assets/imgs/catalog/grinder-manual.png" width="120" alt="Grinder premio">
-    <button class="btn close-raffle" type="button">Cerrar</button>
-  </div>
+   <!-- =============== RAFFLE POPUPS =============== -->
+    <div class="raffleContainer" id="raffle-modal" style="display:none;">
+      <span class="raffle-content"></span>
+      <div style="display: flex; flex-wrap: no-wrap; justify-content: center; align-items: center;">
 
-  <div class="raffle-popup">
-    <h2 class="gold">🎁 Rifa #2</h2>
-    <p>Compras mayores a <b class="gold">$35.000</b> reciben un ticket GRATIS.</p>
-    <img src="./assets/imgs/catalog/mens-gift.png" width="120" alt="Regalo masculino">
-    <button class="btn close-raffle" type="button">Cerrar</button>
-  </div>
+        <div class="raffle-popup">
+          <h2 class="gold">🎁 Rifa #1</h2>
+          <p>Compras mayores a <b class="gold">$15.000</b> reciben un ticket GRATIS para ganarse este trillador con tray!.</p>
+          <img src="./assets/imgs/catalog/grinder-manual.png" width="120" alt="Grinder premio">
+          <button class="btn close-raffle" type="button">Cerrar</button>
+        </div>
 
-  <div class="raffle-popup">
-    <h2 class="gold">🎁 Rifa #3</h2>
-    <p>Compras mayores a <b class="gold">$60.000</b> reciben un ticket GRATIS.</p>
-    <img src="./assets/imgs/catalog/hooka.png" width="120" alt="Hooka premio">
-    <button class="btn close-raffle" type="button">Cerrar</button>
-  </div>
-</div>
+        <div class="raffle-popup">
+          <h2 class="gold">🎁 Rifa #2</h2>
+          <p>Compras mayores a <b class="gold">$35.000</b> reciben un ticket GRATIS para ganarse este kit de armar porros!.</p>
+          <img src="./assets/imgs/catalog/mens-gift.png" width="120" alt="Regalo masculino">
+          <button class="btn close-raffle" type="button">Cerrar</button>
+        </div>
 
-
+        <div class="raffle-popup">
+          <h2 class="gold">🎁 Rifa #3</h2>
+          <p>Compras mayores a <b class="gold">$60.000</b> reciben un ticket GRATIS para ganarse esta Mini Hooka!.</p>
+          <img src="./assets/imgs/catalog/hooka.png" width="120" alt="Hooka premio">
+          <button class="btn close-raffle" type="button">Cerrar</button>
+        </div>
+      </div>
+    </div>
     <!-- =============== PRODUCTOS =============== -->
     <section id="productos" class="productos">
       <h2 class="gold">Productos</h2>
@@ -129,11 +134,11 @@
           <h3>King Rolling Tray</h3>
           <p>Tray de lujo — compacto y duradero. Ideal para armar con estilo.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $75.000
-            </h3>
-            <small class="price red">$95.000</small>
+            $75.000
+          </h3>
+          <small class="price red">$95.000</small>
           </p>
 
           <button class="btn product-btn">Comprar</button>
@@ -149,11 +154,11 @@
           <h3>Electric Grinder</h3>
           <p>Molido fino y rápido — batería y diseño compacto.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $45.000
-            </h3>
-            <small class="price red">$85.000</small>
+            $45.000
+          </h3>
+          <small class="price red">$85.000</small>
           </p>
           <button class="btn product-btn">Comprar</button>
         </div>
@@ -168,11 +173,11 @@
           <h3>Flavor Hemp Blunts</h3>
           <p>Compacta y sabrosa — perfecta para el parche.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $8.000
-            </h3>
-            <small class="price red">$15.000</small>
+            $8.000
+          </h3>
+          <small class="price red">$15.000</small>
           </p>
           <button class="btn product-btn">Comprar</button>
         </div>
@@ -187,11 +192,11 @@
           <h3>Mini Hooka</h3>
           <p>Para usos múltiples: carbón, tabaco y hierbas.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $45.000
-            </h3>
-            <small class="price red">$65.000</small>
+            $45.000
+          </h3>
+          <small class="price red">$65.000</small>
           </p>
           <button class="btn product-btn">Comprar</button>
         </div>
@@ -206,11 +211,11 @@
           <h3>King Cone Holder</h3>
           <p>Estuche impermeable e indestructible para tus cones.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $3.500
-            </h3>
-            <small class="price red">$6.000</small>
+            $3.500
+          </h3>
+          <small class="price red">$6.000</small>
           </p>
           <button class="btn product-btn">Comprar</button>
         </div>
@@ -225,16 +230,19 @@
           <h3>Trillador Pro</h3>
           <p>Pa’ la vuelta fina: trae compartimento para material molido y otro para nuggets.</p>
           <p class="price">
-            <h3 class="gold" >
+          <h3 class="gold">
 
-              $15.000
-            </h3>
-            <small class="price red">$17.000</small>
+            $15.000
+          </h3>
+          <small class="price red">$17.000</small>
           </p>
           <button class="btn product-btn">Comprar</button>
         </div>
       </div>
     </section>
+
+
+ 
 
     <!-- =============== EVENTOS =============== -->
     <section id="eventos" class="eventos">
@@ -270,7 +278,8 @@
       <p>¿Quieres comprar algo o tienes preguntas bro?</p>
 
       <div class="contact-info">
-        <p><b class="gold">WhatsApp:</b> <a href="https://wa.me/573238119340" target="_blank" rel="noopener">323 811 9340</a></p>
+        <p><b class="gold">WhatsApp:</b> <a href="https://wa.me/573238119340" target="_blank" rel="noopener">323 811
+            9340</a></p>
         <p><b class="gold">Email:</b> JACF2025@gmail.com</p>
         <p><b class="gold">Instagram / TikTok:</b> Próximamente</p>
       </div>
@@ -281,11 +290,11 @@
       <img id="nequi" src="./assets/imgs/QR-code.png" width="150" class="qr" alt="QR Nequi">
     </section>
 
-<article class="zipakings-panel" id="KingZone">
-    <header class="zk-header">
+    <article class="zipakings-panel" id="KingZone">
+      <header class="zk-header">
         <h2 class="zk-title">👑 ZipaKings – Movimiento Real</h2>
         <p class="zk-subtitle">Una organización creada con el manifiesto de los Reyes </p>
-          <header style="
+        <header style="
     position:relative;
     height:70vh;
     display:flex;
@@ -297,7 +306,7 @@
     border-bottom:2px solid rgba(212,175,55,0.5);
   ">
 
-    <h1 style="
+          <h1 style="
       font-size:3.8rem;
       color:#D4AF37;
       margin-bottom:15px;
@@ -305,10 +314,10 @@
       letter-spacing:4px;
       font-weight:900;
     ">
-      ZipaKings
-    </h1>
+            ZipaKings
+          </h1>
 
-    <p style="
+          <p style="
       max-width:750px;
       font-size:1.1rem;
       color:white;
@@ -317,78 +326,88 @@
       line-height:1.5;
       padding:0 20px;
     ">
-      Una organización nacida del <strong style="color:#D4AF37;">Manifiesto de los Reyes</strong>:  
-      elevar a nuestra comunidad con creatividad, disciplina, estilo, comercio justo y visión de futuro.  
-      Somos cultura, somos calle, somos clase. Somos ZipaKings. 👑
-    </p>
+            Una organización nacida del <strong style="color:#D4AF37;">Manifiesto de los Reyes</strong>:
+            elevar a nuestra comunidad con creatividad, disciplina, estilo, comercio justo y visión de futuro.
+            Somos cultura, somos calle, somos clase. Somos ZipaKings. 👑
+          </p>
 
-    <!-- NAVIGATION -->
-    <nav style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:10px;">
-      <a href="#raffles" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎟️ Raffles</a>
-      <a href="#web" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">💻 Web Services</a>
-      <a href="#clothes" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">👕 Custom Clothes</a>
-      <a href="#smoke" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🔥 Smoke & Speak</a>
-      <a href="#charity" style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎄 Caridad</a>
-    </nav>
+          <!-- NAVIGATION -->
+          <nav style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:10px;">
+            <a href="#raffles"
+              style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎟️
+              Raffles</a>
+            <a href="#web"
+              style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">💻
+              Web Services</a>
+            <a href="#clothes"
+              style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">👕
+              Custom Clothes</a>
+            <a href="#smoke"
+              style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🔥
+              Smoke & Speak</a>
+            <a href="#charity"
+              style="padding:10px 20px; background:#111; border:1px solid #D4AF37; border-radius:12px; color:white; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #D4AF37;">🎄
+              Caridad</a>
+          </nav>
 
- 
-    </header>
 
-    <section id="raffles" class="zk-section">
-        <h3 class="zk-section-title">🎟️ Raffles Reales</h3>
-        <p class="zk-text">
-            Participa enviando un mensaje por WhatsApp al 
+        </header>
+
+        <section id="raffles" class="zk-section">
+          <h3 class="zk-section-title">🎟️ Raffles Reales</h3>
+          <p class="zk-text">
+            Participa enviando un mensaje por WhatsApp al
             <strong>323 811 9340</strong> diciendo que deseas entrar al sorteo.
-            Adjunta el pantallazo de tu compra Nequi.  
+            Adjunta el pantallazo de tu compra Nequi.
             <span class="zk-highlight">Cada compra cuenta: entre más alto el monto, más grande el premio.</span>
-        </p>
-        <a href="https://wa.me/573238119340?text=Quiero%20participar%20en%20el%20raffle%20ZipaKings" 
-           class="zk-btn">Participar por WhatsApp</a>
-    </section>
+          </p>
+          <a href="https://wa.me/573238119340?text=Quiero%20participar%20en%20el%20raffle%20ZipaKings"
+            class="zk-btn">Participar por WhatsApp</a>
+        </section>
 
-    <section id="web" class="zk-section">
-        <h3 class="zk-section-title">💻 Servicios Web Premium</h3>
-        <p class="zk-text">
-            Landing pages y sitios profesionales al estilo ZipaKings.  
-            <strong>Precio especial: 400.000 COP</strong>  
+        <section id="web" class="zk-section">
+          <h3 class="zk-section-title">💻 Servicios Web Premium</h3>
+          <p class="zk-text">
+            Landing pages y sitios profesionales al estilo ZipaKings.
+            <strong>Precio especial: 400.000 COP</strong>
             <strong>Mantenimiento: 25.000 COP/mes</strong> (incluye hosting real).
-        </p>
-        <a href="https://wa.me/573238119340?text=Estoy%20interesado%20en%20servicios%20web%20ZipaKings" 
-           class="zk-btn">Solicitar Proyecto</a>
-    </section>
+          </p>
+          <a href="https://wa.me/573238119340?text=Estoy%20interesado%20en%20servicios%20web%20ZipaKings"
+            class="zk-btn">Solicitar Proyecto</a>
+        </section>
 
-    <section id="clothes" class="zk-section">
-        <h3 class="zk-section-title">🏈 Jerseys Personalizados</h3>
-        <p class="zk-text">
-            Jerseys premium para fútbol, baloncesto y béisbol.  
-            Elige color, número, nombre y estilo.  
+        <section id="clothes" class="zk-section">
+          <h3 class="zk-section-title">🏈 Jerseys Personalizados</h3>
+          <p class="zk-text">
+            Jerseys premium para fútbol, baloncesto y béisbol.
+            Elige color, número, nombre y estilo.
             <strong>100% pre-order ZipaKings Edition.</strong>
-        </p>
-        <a href="https://wa.me/573238119340?text=Quiero%20un%20jersey%20personalizado%20ZipaKings" 
-           class="zk-btn">Hacer Pedido</a>
-    </section>
+          </p>
+          <a href="https://wa.me/573238119340?text=Quiero%20un%20jersey%20personalizado%20ZipaKings"
+            class="zk-btn">Hacer Pedido</a>
+        </section>
 
-    <section id="smoke" class="zk-section">
-        <h3 class="zk-section-title">💨 Smoke & Speak Sessions</h3>
-        <p class="zk-text">
-            Para stoners, rockers y hip hop heads que quieren **mejorar su inglés**.  
-            Actividades, charlas y breaks para fumar sin estrés.  
+        <section id="smoke" class="zk-section">
+          <h3 class="zk-section-title">💨 Smoke & Speak Sessions</h3>
+          <p class="zk-text">
+            Para stoners, rockers y hip hop heads que quieren **mejorar su inglés**.
+            Actividades, charlas y breaks para fumar sin estrés.
             Costo pequeño – energía grande.
-        </p>
-        <a href="https://wa.me/573238119340?text=Quiero%20entrar%20a%20Smoke%20y%20Speak%20ZipaKings" 
-           class="zk-btn">Unirme</a>
-    </section>
+          </p>
+          <a href="https://wa.me/573238119340?text=Quiero%20entrar%20a%20Smoke%20y%20Speak%20ZipaKings"
+            class="zk-btn">Unirme</a>
+        </section>
 
-    <section id="charity" class="zk-section">
-        <h3 class="zk-section-title">🎄 Evento de Caridad – Zipaquirá</h3>
-        <p class="zk-text">
-            ZipaKings está reuniendo juguetes para niños de los barrios más vulnerables.  
+        <section id="charity" class="zk-section">
+          <h3 class="zk-section-title">🎄 Evento de Caridad – Zipaquirá</h3>
+          <p class="zk-text">
+            ZipaKings está reuniendo juguetes para niños de los barrios más vulnerables.
             Tu aporte hace una diferencia real en esta Navidad.
-        </p>
-        <a href="https://wa.me/573238119340?text=Quiero%20donar%20para%20el%20evento%20de%20Navidad%20ZipaKings" 
-           class="zk-btn">Donar Juguetes</a>
-    </section>
-</article>
+          </p>
+          <a href="https://wa.me/573238119340?text=Quiero%20donar%20para%20el%20evento%20de%20Navidad%20ZipaKings"
+            class="zk-btn">Donar Juguetes</a>
+        </section>
+    </article>
 
 
 
@@ -408,7 +427,7 @@
   </audio>
 
 
- <script src="./assets/script.js"></script>
+  <script src="./assets/script.js"></script>
 
 
 </html>

@@ -51,21 +51,60 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ==================================================
        RAFFLE POPUP
   ================================================== */
-  const raffleBtn    = $("#raffle-btn");
-  const raffleModal  = $("#raffle-modal");
-  const closeButtons = $$(".close-raffle");
+  /* ==================================================
+     RAFFLE POPUP — SE ABRE AL LLEGAR A LA MITAD
+================================================== */
 
-  if (raffleBtn && raffleModal) {
-    raffleBtn.addEventListener("click", () => {
+// elementos
+const raffleModal  = $("#raffle-modal");
+const closeButtons = $$(".close-raffle");
+
+// evita que aparezca más de una vez por sesión
+let raffleShown = false;
+
+function checkScrollForRaffle() {
+  if (raffleShown) return;
+
+  const scrollY = window.scrollY;
+  const pageHeight = document.documentElement.scrollHeight;
+  const half = pageHeight / 4;
+
+  if (scrollY >= half) {
+    raffleShown = true;
+
+    if (raffleModal) {
       raffleModal.style.display = "flex";
-    });
-  }
 
-  closeButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      raffleModal.style.display = "none";
-    });
+      // Inserta anuncio y condiciones dentro del modal
+      const content = raffleModal.querySelector(".raffle-content");
+      if (content) {
+        content.innerHTML = `
+          <h2 class="gold">🎟 Rifa Exclusiva ZipaKings 🎟</h2>
+          <p>
+            Participa en la rifa oficial enviando tu <strong>comprobante de pago por Nequi</strong>.<br><br>
+            📸 Envía un <strong>screenshot</strong> del pago al WhatsApp.<br>
+            🎁 Entra automáticamente a la lista de participantes.<br>
+            🔥 Premio anunciado en nuestras historias.<br><br>
+            ¡Gracias por apoyar el proyecto, parce! 💛✨
+          </p>
+        `;
+      }
+    }
+
+    // Remover listener después de activarse
+    window.removeEventListener("scroll", checkScrollForRaffle);
+  }
+}
+
+// ejecutar en scroll
+window.addEventListener("scroll", checkScrollForRaffle);
+
+// cerrar popup
+closeButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    raffleModal.style.display = "none";
   });
+});
 
   /* ==================================================
        VIP SIGNUP
