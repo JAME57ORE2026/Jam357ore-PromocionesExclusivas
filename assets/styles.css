@@ -36,9 +36,11 @@ body {
   0% {
     filter: drop-shadow(0 0 10px #00ff88) brightness(1);
   }
+
   50% {
     filter: drop-shadow(0 0 20px #07aa5e) brightness(1.2);
   }
+
   100% {
     filter: drop-shadow(0 0 35px #ffee00) brightness(1.4);
   }
@@ -58,7 +60,7 @@ body {
   font-size: 1.2rem;
   margin-top: 10px;
   text-shadow: 0 0 6px #00ff88;
-   animation: logoGlow 2.5s ease-in-out infinite alternate;
+  animation: logoGlow 2.5s ease-in-out infinite alternate;
 
   z-index: 10;
 }
@@ -76,6 +78,7 @@ body {
   animation: smokeScroll 60s linear infinite;
   z-index: 10;
 }
+
 .smoke-wrap {
   position: absolute;
   top: 0;
@@ -98,6 +101,7 @@ body {
   animation: float 60s linear infinite;
   z-index: 5;
 }
+
 .cloud-1 {
   top: 20%;
   left: -150px;
@@ -118,6 +122,7 @@ body {
   animation-delay: 5s;
   animation-duration: 90s;
 }
+
 .overlay::before {
   content: '';
   position: absolute;
@@ -130,8 +135,13 @@ body {
 
 
 @keyframes smokeScroll {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(50%, 100%); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50%, 100%);
+  }
 }
 
 /* promo section */
@@ -141,7 +151,7 @@ body {
   border-top: 5px solid gold;
   border-bottom: 5px solid gold;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-  
+
 }
 
 .promo h2 {
@@ -173,7 +183,8 @@ body {
   line-height: 1.6;
 }
 
-.discount, .delivery {
+.discount,
+.delivery {
   color: #00ff88;
   font-weight: bold;
 }
@@ -222,18 +233,22 @@ footer {
   0% {
     transform: translateX(0) translateY(0);
   }
+
   50% {
     transform: translateX(100vw) translateY(-30px);
   }
+
   100% {
     transform: translateX(-100vw) translateY(0);
   }
 }
+
 @keyframes fadeInDown {
   from {
     transform: translateY(-50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -242,373 +257,407 @@ footer {
 
 
 body.dark {
-    background: #0d0d0d;
-    color: #eee;
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 0.5px;
-    overflow-x: hidden;
+  background: #0d0d0d;
+  color: #eee;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
 
 /* gold highlight */
 
 /* general layout spacing */
 section {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 /* ============================
    GLOBAL BUTTONS
 ============================ */
 .btn {
-    padding: 12px 25px;
-    background: #1b1b1b;
-    border: 2px solid #ffcc33;
-    border-radius: 8px;
-    color: #ffcc33;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s ease;
+  padding: 12px 25px;
+  background: #1b1b1b;
+  border: 2px solid #ffcc33;
+  border-radius: 8px;
+  color: #ffcc33;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: #ffcc33;
-    color: #000;
+  background: #ffcc33;
+  color: #000;
 }
 
 /* smaller toggle buttons */
 .btn-toggle {
-    font-size: 14px;
-    padding: 6px 15px;
-    margin-left: 10px;
+  font-size: 14px;
+  padding: 6px 15px;
+  margin-left: 10px;
 }
 
 /* ============================
    AGE GATE POPUP
 ============================ */
 #age-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.92);
-    backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999999 !important;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999 !important;
 }
 
 .age-card {
-    background: #111;
-    padding: 30px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 380px;
-    text-align: center;
-    border: 2px solid #ffcc33;
-    z-index: 999999;
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  border: 2px solid #ffcc33;
+  z-index: 999999;
 }
 
 .age-btns {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 .btn.ghost {
-    background: transparent;
-    color: #ccc;
-    border-color: #666;
+  background: transparent;
+  color: #ccc;
+  border-color: #666;
 }
 
 .btn.ghost:hover {
-    background: #666;
-    color: #fff;
+  background: #666;
+  color: #fff;
 }
 
 /* ============================
    NAVBAR
 ============================ */
 .header {
-    width: 100%;
-    padding: 15px 20px;
-    background: #0f0f0f;
-    border-bottom: 1px solid #222;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 90;
+  width: 100%;
+  padding: 15px 20px;
+  background: #0f0f0f;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 90;
 }
-.header div.logo img.banner{
+
+.header div.logo img.banner {
   width: max-content !important;
   height: 50px;
 }
+
 .header nav a {
-    margin: 0 12px;
-    color: #eee;
-    text-decoration: none;
-    font-size: 18px;
+  margin: 0 12px;
+  color: #eee;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .header nav a:hover {
-    color: #ffcc33;
+  color: #ffcc33;
 }
 
 .header .logo img {
-    width: 35px;
+  width: 35px;
 }
-
+div.raffle-flex{
+ display: flex;
+ flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
 /* ============================
    HERO SECTION
 ============================ */
 .hero {
-    position: relative;
-    height: 95vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
 }
 
 /* smoke animations */
 .smoke-wrap {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .cloud {
-    position: absolute;
-    width: 300px;
-    opacity: 0.2;
-    animation: float 40s linear infinite;
+  position: absolute;
+  width: 300px;
+  opacity: 0.2;
+  animation: float 40s linear infinite;
 }
 
-.cloud-1 { top: 10%; left: -20%; animation-duration: 55s; }
-.cloud-2 { top: 40%; left: -15%; animation-duration: 50s; }
-.cloud-3 { top: 70%; left: -25%; animation-duration: 60s; }
+.cloud-1 {
+  top: 10%;
+  left: -20%;
+  animation-duration: 55s;
+}
+
+.cloud-2 {
+  top: 40%;
+  left: -15%;
+  animation-duration: 50s;
+}
+
+.cloud-3 {
+  top: 70%;
+  left: -25%;
+  animation-duration: 60s;
+}
 
 @keyframes float {
-    0% { transform: translateX(-300px); }
-    100% { transform: translateX(100vw); }
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
 /* hero content */
 .hero .overlay {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
-img#banner{
-    z-index: 1;
- width: 100% !important;
-} 
+
+img#banner {
+  z-index: 1;
+  width: 100% !important;
+}
 
 .hero .logo {
-    width: 130px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 130px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .title {
-    font-family: "Orbitron", sans-serif;
-    font-size: 48px;
-    color: #ffcc33;
-    text-shadow: 0 0 10px rgba(255, 255, 100, 0.4);
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  color: #ffcc33;
+  text-shadow: 0 0 10px rgba(255, 255, 100, 0.4);
 }
 
 .tagline {
-    margin-top: 10px;
-    font-size: 20px;
-    opacity: 0.9;
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.9;
 }
 
 .btn {
   position: relative;
-    z-index: 10000;
-    margin-top: 20px;
+  z-index: 10000;
+  margin-top: 20px;
 }
 
 /* ============================
    PROMO SECTION
 ============================ */
 .promo {
-    background: #111;
-    border-top: 2px solid #222;
-    border-bottom: 2px solid #222;
+  background: #111;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
 }
-.price{
-  
+
+.price {
+
   font-size: 20px;
 }
-.red{
+
+.red {
   font-size: 16px;
   color: rgb(207, 56, 56);
   text-decoration: line-through;
 }
+
 .promo-btn {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 /* ============================
    RAFFLE POPUP
 ============================ */
-.raffleContainer{
+.raffleContainer {
   display: flex;
   margin-top: 50px;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
-.raffleContainer p{
-  
+
+.raffleContainer p {
+
   font-size: 20px;
 }
+
 .raffle-popup {
-    background: #0f0f0f;
-    border: 2px solid #ffcc33;
-    width: 90%;
-    max-width: 420px;
-    padding: 25px;
-    margin: 10px;
-    border-radius: 12px;
-    display: flex; /* shown by JS */
+  background: #0f0f0f;
+  border: 2px solid #ffcc33;
+  width: 90%;
+  max-width: 420px;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 12px;
+  display: flex;
+  /* shown by JS */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    z-index: 1;
-   
+  z-index: 1;
+
 }
 
 .raffle-images {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
 }
 
 /* ============================
    PRODUCT GRID
 ============================ */
 .productos .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+  display: flex;
 }
 
 .product-card {
-    background: #111;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #222;
-    transition: 0.3s;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  transition: 0.3s;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    border-color: #ffcc33;
+  transform: translateY(-5px);
+  border-color: #ffcc33;
 }
 
 .product-img {
-    position: relative;
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 12px;
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 .product-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .watermark {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-    opacity: 0.7;
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  opacity: 0.7;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
 }
-.gold,h3.gold{
+
+.gold,
+h3.gold {
   color: #ffcc33;
   font-size: 35px;
   margin: 0;
 }
+
 /* ============================
    EVENTOS
 ============================ */
 .eventos ul {
-    list-style: none;
-    margin-top: 20px;
+  list-style: none;
+  margin-top: 20px;
 }
 
 .eventos li {
-    margin: 10px 0;
-    font-size: 20px;
+  margin: 10px 0;
+  font-size: 20px;
 }
 
 /* ============================
    VIP SIGNUP
 ============================ */
 #vip-email {
-    padding: 12px;
-    width: 80%;
-    max-width: 340px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #333;
-    background: #0d0d0d;
-    color: #fff;
+  padding: 12px;
+  width: 80%;
+  max-width: 340px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #333;
+  background: #0d0d0d;
+  color: #fff;
 }
 
 .vip-status {
-    margin-top: 12px;
-    font-size: 18px;
+  margin-top: 12px;
+  font-size: 18px;
 }
 
 /* ============================
    CONTACTO
 ============================ */
 .contact-info a {
-    color: #ffcc33;
+  color: #ffcc33;
 }
 
 .qr {
-  
-    border-radius: 10px;
-    width: 50%;
+
+  border-radius: 10px;
+  width: 50%;
 }
 
 /* ============================
    FOOTER
 ============================ */
 .footer {
-    padding: 30px;
-    text-align: center;
-    background: #0b0b0b;
-    margin-top: 30px;
-    border-top: 1px solid #222;
+  padding: 30px;
+  text-align: center;
+  background: #0b0b0b;
+  margin-top: 30px;
+  border-top: 1px solid #222;
 }
 
 .footer .mini {
-    font-size: 14px;
-    opacity: 0.6;
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 /* ============================
    RESPONSIVE FIXES
 ============================ */
 @media (max-width: 600px) {
-    /* .title {
+  /* .title {
         font-size: 32px;
     }
     .tagline {
@@ -631,7 +680,7 @@ img#banner{
   font-family: "Poppins", sans-serif;
   border-top: 4px solid #d4af37;
   margin-top: 60px;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -655,7 +704,7 @@ img#banner{
 .zipakings-panel .zk-subtitle {
   font-size: 1rem;
   opacity: 0.8;
-  
+
 }
 
 /* Section Blocks */
@@ -679,7 +728,7 @@ img#banner{
   color: #d4af37;
   font-weight: 600;
   margin-bottom: 10px;
-   font-family: 'UnifrakturCook', cursive;
+  font-family: 'UnifrakturCook', cursive;
 }
 
 /* Text */
@@ -704,13 +753,14 @@ img#banner{
   border-radius: 10px;
   text-decoration: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
-   font-family: 'UnifrakturCook', cursive;
+  font-family: 'UnifrakturCook', cursive;
 }
 
 .zipakings-panel .zk-btn:hover {
   opacity: 0.85;
   transform: scale(1.05);
 }
+
 /* ============================
    📱 MOBILE RESPONSIVE OVERRIDES
    ============================ */
@@ -718,19 +768,27 @@ img#banner{
 
   /* ----- Body ----- */
   body {
-    overflow-x: hidden;
-            display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+    margin-left: 10px
   }
-
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section{
+    width: 50%;
+  }
   /* ----- Navbar ----- */
   .header {
     flex-direction: column;
     padding: 12px;
     gap: 10px;
-  
+
   }
 
   .header nav a {
@@ -819,12 +877,25 @@ img#banner{
 
   /* ----- PRODUCT GRID ----- */
   .productos .grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+   .raffle-content p,
+   .overlay h1, .overlay p{
+    width: 300px;
+   }
+  .raffle-content div.raffle-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
   }
 
   .product-card {
     padding: 15px;
+    width: 50%;
   }
 
   .product-img {
@@ -915,4 +986,3 @@ img#banner{
     padding: 12px;
   }
 }
-
