@@ -900,7 +900,10 @@ h3.gold {
     align-items: center;
     width: 50%;
   }
+.zipakings-panel .zk-header {
+ width: 70%;
 
+}
   .product-card {
     padding: 0;
     width: 150px;
